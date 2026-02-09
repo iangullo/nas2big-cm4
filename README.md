@@ -1,6 +1,7 @@
 # CM4 NAS Board [UNMAINTAINED]
 
-This Compute Module 4 carrier board design exposes a subset of the CM4's interfaces, including its single PCIe 2.0 lane to accept an external SATA controller card.
+This Compute Module 4 carrier board design exposes a subset of the CM4's interfaces, including its single PCIe 2.0 lane to replace a legacy (no longer maintained) Lacie nas2big logic board. Starting concept is to provide a full upgrade retaining the core elements of the orignal case (external connectors, drive bays, frontal LED/button). It is my first attempt at a project so ambitious, trying to reconcile need to improve product performance and modern linux requirements but respecting the limitations imposed by the original case.
+
 This design is based off of the official Raspberry Pi Foundation's CM4 IO board (the KiCad project is available on the [IO board official page](https://www.raspberrypi.org/products/compute-module-4-io-board/?resellerType=home)). Removed the IO that was less relevant for a NAS and rearranged the remaining interfaces for a smaller footprint that would fit within the width of a standard 3.5" hard drive.
 
 The board was intentionally kept simple to limit mistakes as this is my first ever attempt at designing a PCB and I have no background in electronics, so all the power management is left to external power supplies and buck converters. It's important to use good quality regulated power supplies with this board as it offers no protection other than what is built into the CM4.
